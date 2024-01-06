@@ -35,7 +35,7 @@ class Stock:
                 best_order_price = min([buy_order.price for buy_order in orders])
             matching_best_orders = self.get_orders_by_price_and_type(order_type, best_order_price)
             best_order_quantity = sum([matching_buy_order.quantity for matching_buy_order in matching_best_orders])
-            message = f"Best {order_type.lower()} order price is {best_order_price} with quantity of {best_order_quantity} actions."
+            message = f"The best {order_type.lower()} order price is {best_order_price} with a quantity of {best_order_quantity} actions."
         else:
             message = f"No {order_type.lower()} orders yet!"
         
