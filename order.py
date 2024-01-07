@@ -1,5 +1,9 @@
 import itertools
 
+#Class for all orders. It contains all essential information about an order, such as order type, price, and quantity.
+#It generates a unique ID for every new object. Additionally, it has implemented the eq operator for easy comparison of order objects.
+#Also, I could have used Enum for order type and Pydantic for data validation.
+
 class Order:
     id_obj = itertools.count()
 

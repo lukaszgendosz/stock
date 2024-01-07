@@ -1,6 +1,7 @@
 from stock import Stock
 from order import Order
 
+#Adds/removes new orders to/from the stock and displays the best prices for buy and sell orders at every step.
 def main():
     orders = [
         ("Buy", "Add", 20.0, 100),
